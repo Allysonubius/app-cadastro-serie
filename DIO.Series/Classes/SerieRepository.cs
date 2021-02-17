@@ -17,7 +17,7 @@ namespace DIO.Series
 
         public void Excluir(int id)
         {
-            throw new NotImplementedException();
+            listaSerie[id].Excluir();
         }
 
         public void Insere(Serie entidade)
