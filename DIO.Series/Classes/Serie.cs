@@ -6,7 +6,6 @@ namespace DIO.Series.Classes
     public class Serie : EntidadeBase
     {
         // Atributos
-
         private Genero Genero{
             get;set;
         }
