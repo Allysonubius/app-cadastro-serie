@@ -32,7 +32,7 @@ namespace DIO.Series
 
         public int ProximoId()
         {
-            throw new NotImplementedException();
+            return listaSerie.Count;
         }
 
         public Serie RertornaPorId(int id)
