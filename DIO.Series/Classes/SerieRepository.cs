@@ -27,7 +27,7 @@ namespace DIO.Series
 
         public List<Serie> Lista()
         {
-            throw new NotImplementedException();
+            return listaSerie;
         }
 
         public int ProximoId()
