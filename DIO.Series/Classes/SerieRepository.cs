@@ -22,7 +22,7 @@ namespace DIO.Series
 
         public void Insere(Serie entidade)
         {
-            throw new NotImplementedException();
+            listaSerie.Add(entidade);
         }
 
         public List<Serie> Lista()
