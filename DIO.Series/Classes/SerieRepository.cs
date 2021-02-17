@@ -12,7 +12,7 @@ namespace DIO.Series
         //Implementações
         public void Atualizar(int id, Serie entidade)
         {
-            throw new NotImplementedException();
+            listaSerie[id] = entidade;
         }
 
         public void Excluir(int id)
