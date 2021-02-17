@@ -37,7 +37,7 @@ namespace DIO.Series
 
         public Serie RertornaPorId(int id)
         {
-            throw new NotImplementedException();
+            return listaSerie[id];
         }
     }
 }
