@@ -4,12 +4,12 @@
 <h3 align="center">Clone e inicie o projeto :</h3>
 
 
-                                                                        `$ dotnet run program.cs `]
+                                                        `$ dotnet run program.cs `]
 
 <h3 align="center">Design</h3>
 <img src="img/tela.png">
 
-> Versão netcore-3.1
+> Versão netcor
 
 <h3>Ferramentas usadas</h3>
 
