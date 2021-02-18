@@ -22,7 +22,7 @@ namespace DIO.Series
                         InserirSerie();
                         break;
                     case "3":
-                        //AtualizarSerie();
+                        AtualizarSerie();
                         break;
                     case "4":
                         //ExcluirSerie();
@@ -62,6 +62,42 @@ namespace DIO.Series
         }
 
         // Service InserirSeries
+        private static void AtualizarSerie()
+        {
+            Console.WriteLine("Digite o ID da série:");
+            int indiceSerie = int.Parse(Console.ReadLine());
+
+            // https://docs.microsoft.com/dotnet/api/system.enum.getvalues?view=netcore-3.1
+            // https://docs.microsoft.com/dotnet/api/system.enum.getname?view=netcore-3.1
+
+            foreach(int i in Enum.GetValues(typeof(Genero)))
+            {
+                Console.WriteLine("{0}-{1}", i , Enum.GetName(typeof(Genero), i));
+            }
+
+            Console.WriteLine("Digite o genêro entre as opções acima: ");
+            int entradaGenero = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o título da série: ");
+            string entradaTitulo = Console.ReadLine();
+
+            Console.WriteLine("Digite o ano de início da série: ");
+            int entradaAno = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite a descrição da série: ");
+            string entradaDescricao = Console.ReadLine();
+
+            Serie atualizaSerie = new Serie(id: indiceSerie,
+                                        genero: (Genero)entradaGenero,
+                                        titulo: entradaTitulo,
+                                        ano: entradaAno,
+                                        descricao: entradaDescricao
+            );
+            repositorio.Atualizar(indiceSerie, atualizaSerie);
+        }
+
+        //Service AtualizarSerie
+
         private static void InserirSerie()
         {
             Console.WriteLine("Inserir nova série");
