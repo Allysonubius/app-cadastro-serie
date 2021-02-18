@@ -9,7 +9,7 @@
 <h3 align="center">Design</h3>
 <img src="img/tela.png">
 
-> Versão netcor
+> Versão netcore 3.1
 
 <h3>Ferramentas usadas</h3>
 
