@@ -1,5 +1,8 @@
-namespace DIO.Series.Enum
+using System;
+
+namespace DIO.Series
 {
+    
     public enum Genero
     {
         Acao = 1,
@@ -16,4 +19,5 @@ namespace DIO.Series.Enum
         Suspense = 12,
         Terror = 13
     }
+    
 }

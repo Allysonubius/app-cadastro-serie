@@ -1,6 +1,4 @@
 using System;
-using DIO.Series.Enum;
-
 namespace DIO.Series.Classes
 {
     public class Serie : EntidadeBase
@@ -48,6 +46,7 @@ namespace DIO.Series.Classes
             retorno += "Título: " + this.Genero + Environment.NewLine;
             retorno += "Descrição: " + this.Genero + Environment.NewLine;
             retorno += "Ano de início: " + this.Genero + Environment.NewLine;
+            retorno += "Excluido: " + this.Excluido + Environment.NewLine;
             return retorno;
         }
         //Encapsulamento
